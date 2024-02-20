@@ -1,6 +1,17 @@
+@font-face {
+  font-family: Norse;
+  src: url(assets/fonts/Norse-Bold.otf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Roboto, "Courier New", Courier, monospace;
 }
 
 body {
@@ -16,4 +27,52 @@ body {
   width: 60%;
   height: 90%;
   display: flex;
+}
+
+.hero-image {
+  flex: 1;
+  background-image: url(assets/images/background-image.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  margin-top: 16rem;
+  width: 100%;
+}
+
+.brand > img {
+  opacity: 1;
+  height: 100%;
+}
+
+.brand > p {
+  color: #fff;
+  font-size: 5rem;
+  font-family: Norse, "Courier New", Courier, monospace;
+}
+
+.hero-image-footer {
+  color: #fff;
+  font-size: 10px;
+  padding: 1rem;
+}
+
+.hero-image-footer > a {
+  color: #fff;
+  font-size: 10px;
+}
+
+.hero-input {
+  flex: 2;
 }
