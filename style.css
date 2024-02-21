@@ -111,6 +111,7 @@ body {
   flex-wrap: wrap;
   column-gap: 4rem;
   margin-left: 2rem;
+  row-gap: 2rem;
 }
 
 .inputs > div {
